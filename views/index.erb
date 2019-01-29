@@ -1,0 +1,15 @@
+<p></p>
+
+<h1>
+  Welcome to David's <strong>Cookbook</strong>!
+</h1>
+
+<ul>
+<% @recipes.each do |recipe| %>
+    <li>
+      <a href=<%= recipe.name.downcase.split(' ').join('-') %>> <%= recipe.name %> (<%= recipe.prep_time %> min) - <%= recipe.difficulty_converter %> </a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/new">Create new recipe</a>

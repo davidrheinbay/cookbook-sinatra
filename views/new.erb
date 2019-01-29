@@ -1,0 +1,18 @@
+<form action="/recipes" method="post">
+  <fieldset>
+    <legend><h2>Please provide a name for your recipe: </h2></legend>
+    <strong>Recipe name:</strong>  <br>
+    <input type="text" name="name"> <br> <br>
+    <strong>Recipe description:</strong> <br>
+    <input type="text" name="description"> <br> <br>
+    <strong>Recipe prep-time (in minutes):</strong> <br>
+    <input type="text" name="prep_time"> <br> <br>
+    <strong>Difficulty</strong> <br>
+    <input type="radio" name="difficulty" value="1" checked> Very easy<br>
+    <input type="radio" name="difficulty" value="2"> Easy<br>
+    <input type="radio" name="difficulty" value="3"> Moderate<br> <br> <br>
+    <input type="submit" value="Create Recipe"> <br> <br> <br>
+  </fieldset>
+</form>
+<!-- POST /recipes -->
+<a href="/">Home</a>
